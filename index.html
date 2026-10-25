@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabi Pratas e Perfumes | Prata 925 e perfumes árabes em Goiânia</title>
+<meta name="description" content="Peças em prata 925 e perfumes árabes importados. Escolha pelo site e finalize seu pedido pelo WhatsApp.">
+<link rel="icon" href="assets/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #ffffff;
+    --blush-50: #fff9f7;
+    --blush-100: #f8ebe6;
+    --blush-200: #efd7cf;
+    --rose-300: #d9aaa1;
+    --rose-500: #b97d74;
+    --rose-700: #8c5a53;
+    --gold: #b8905f;
+    --gold-soft: #e7d3b8;
+    --cocoa: #4d3a35;
+    --muted: #7f6a63;
+    --radius: 20px;
+    --shadow: 0 18px 40px -22px rgba(77, 58, 53, .35);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--cocoa);
+    background: var(--blush-50);
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+  .wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.08;
+    margin: 0;
+    letter-spacing: -.01em;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    padding: .9rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font: 400 .95rem/1 var(--font-body);
+    letter-spacing: .02em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--cocoa); color: var(--white); }
+  .btn-primary:hover { background: var(--rose-700); }
+  .btn-ghost { border-color: var(--rose-300); color: var(--cocoa); background: transparent; }
+  .btn-ghost:hover { background: var(--blush-100); }
+  .btn-whats { background: #25a35a; color: var(--white); }
+  .btn-whats:hover { background: #1f8a4c; }
+  .btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 249, 247, .86);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--blush-200);
+  }
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 74px;
+  }
+  .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
+  .brand img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold-soft); }
+  .brand span { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; }
+  .nav { display: flex; align-items: center; gap: 1.6rem; }
+  .nav a { text-decoration: none; font-size: .95rem; color: var(--muted); transition: color .2s; }
+  .nav a:hover { color: var(--cocoa); }
+  .header-cta { padding: .7rem 1.1rem; font-size: .88rem; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(3rem, 7vw, 5.5rem); }
+  .hero .wrap {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4.5rem);
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 5.6vw, 4.6rem);
+    font-weight: 500;
+  }
+  .hero h1 em { font-style: italic; font-weight: 400; color: var(--rose-700); }
+  .hero p.lead {
+    margin: 1.4rem 0 0;
+    max-width: 34rem;
+    font-size: 1.08rem;
+    color: var(--muted);
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+  .hero-figure { position: relative; margin: 0; }
+  .hero-figure img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 999px 999px 28px 28px;
+    box-shadow: var(--shadow);
+  }
+  .hero-figure::after {
+    content: "";
+    position: absolute;
+    inset: -14px -14px auto auto;
+    width: 62%;
+    aspect-ratio: 1;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .55;
+  }
+
+  /* one orchestrated load sequence */
+  .rise { opacity: 0; transform: translateY(14px); animation: rise .9s cubic-bezier(.16, 1, .3, 1) forwards; }
+  .rise-2 { animation-delay: .12s; }
+  .rise-3 { animation-delay: .24s; }
+  .rise-4 { animation-delay: .36s; }
+  .hero-figure.rise { animation-delay: .18s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  /* ---------- Strip ---------- */
+  .strip { border-block: 1px solid var(--blush-200); background: var(--white); }
+  .strip .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+  .strip div { padding: 1.4rem .8rem; }
+  .strip div + div { border-left: 1px solid var(--blush-200); }
+  .strip strong { display: block; font-family: var(--font-display); font-size: 1.35rem; font-weight: 500; }
+  .strip span { font-size: .9rem; color: var(--muted); }
+
+  /* ---------- Sections ---------- */
+  section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+  .section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: 2.2rem;
+  }
+  .section-head h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); }
+  .section-head p { margin: .6rem 0 0; color: var(--muted); max-width: 30rem; }
+
+  /* ---------- Catalog ---------- */
+  .toolbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem 2.5rem;
+    align-items: center;
+    padding: 1.4rem 1.6rem;
+    background: var(--white);
+    border: 1px solid var(--blush-200);
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .chip {
+    font: 400 .9rem var(--font-body);
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--blush-200);
+    background: transparent;
+    color: var(--cocoa);
+    cursor: pointer;
+    transition: background-color .2s, color .2s, border-color .2s;
+  }
+  .chip:hover { border-color: var(--rose-300); }
+  .chip[aria-pressed="true"] { background: var(--cocoa); border-color: var(--cocoa); color: var(--white); }
+
+  .price-filter { min-width: 290px; }
+  .price-filter .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: .9rem;
+    color: var(--muted);
+    margin-bottom: .6rem;
+  }
+  .price-filter output { font-weight: 400; color: var(--cocoa); }
+  .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--rose-700); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .link-btn:disabled { color: var(--muted); cursor: default; text-decoration: none; opacity: .5; }
+
+  .range { position: relative; height: 28px; }
+  .range-track, .range-fill {
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    transform: translateY(-50%);
+    border-radius: 999px;
+  }
+  .range-track { left: 0; right: 0; background: var(--blush-200); }
+  .range-fill { background: var(--rose-500); }
+  .range input[type="range"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+  }
+  .range input[type="range"]::-webkit-slider-runnable-track { background: transparent; height: 28px; }
+  .range input[type="range"]::-moz-range-track { background: transparent; }
+  .range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--rose-700);
+    box-shadow: 0 2px 6px rgba(77, 58, 53, .2);
+    cursor: grab;
+    margin-top: 4px;
+  }
+  .range input[type="range"]::-moz-range-thumb {
+    pointer-events: auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--rose-700);
+    cursor: grab;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.6rem;
+  }
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--blush-200);
+    display: flex;
+    flex-direction: column;
+  }
+  .card-img { aspect-ratio: 1 / 1; background: var(--blush-100); overflow: hidden; }
+  .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.16, 1, .3, 1); }
+  .card:hover .card-img img { transform: scale(1.04); }
+  .card-body { padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .card h3 { font-size: 1.35rem; }
+  .card-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: .6rem; padding-top: .6rem; }
+  .price { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--rose-700); }
+  .add {
+    font: 400 .88rem var(--font-body);
+    padding: .6rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--cocoa);
+    background: transparent;
+    color: var(--cocoa);
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+  }
+  .add:hover { background: var(--cocoa); color: var(--white); }
+  .empty { text-align: center; color: var(--muted); padding: 3rem 0; }
+
+  /* ---------- Perfumes ---------- */
+  .perfumes { background: var(--cocoa); color: var(--blush-100); }
+  .perfumes .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+  }
+  .perfumes h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); color: var(--white); }
+  .perfumes p { color: var(--blush-200); max-width: 32rem; }
+  .perfumes .btn-ghost { border-color: var(--gold); color: var(--white); }
+  .perfumes .btn-ghost:hover { background: rgba(255, 255, 255, .08); }
+  .perfume-notes { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 1rem; }
+  .perfume-notes li {
+    border-top: 1px solid rgba(231, 211, 184, .3);
+    padding-top: 1rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+  }
+  .perfume-notes li small { display: block; font-family: var(--font-body); font-size: .9rem; color: var(--gold-soft); font-weight: 300; }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials-head { text-align: center; max-width: 540px; margin: 0 auto 2.5rem; }
+  .testimonials-head h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); }
+  .testimonials-head p { color: var(--muted); }
+  .marquee-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 580px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+            mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+  }
+  .marquee-col { width: min(320px, 100%); flex: none; }
+  .marquee-track { display: flex; flex-direction: column; animation: scroll-up var(--dur, 18s) linear infinite; }
+  .marquee-group { display: flex; flex-direction: column; gap: 1.5rem; padding-bottom: 1.5rem; }
+  .marquee-col:nth-child(n+2) { display: none; }
+  @media (min-width: 760px) { .marquee-col:nth-child(2) { display: block; } }
+  @media (min-width: 1000px) { .marquee-col:nth-child(3) { display: block; } }
+  @keyframes scroll-up { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+
+  .quote {
+    background: var(--white);
+    border: 1px solid var(--blush-200);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    box-shadow: 0 10px 30px -20px rgba(77, 58, 53, .4);
+  }
+  .quote p { margin: 0; font-size: 1rem; color: var(--cocoa); }
+  .quote footer { display: flex; align-items: center; gap: .75rem; margin-top: 1.2rem; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--blush-200); color: var(--rose-700);
+    font-family: var(--font-display); font-weight: 600; font-size: 1.05rem;
+  }
+  .quote strong { display: block; font-weight: 500; font-size: .95rem; line-height: 1.2; }
+  .quote small { color: var(--muted); font-size: .85rem; }
+
+  /* ---------- Visit / delivery ---------- */
+  .visit .wrap {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+  }
+  .visit img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 28px 28px 120px 28px;
+    box-shadow: var(--shadow);
+  }
+  .visit h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); }
+  .visit p { color: var(--muted); }
+  .options { display: grid; gap: 1.4rem; margin-top: 2rem; }
+  .option { padding-left: 1.2rem; border-left: 2px solid var(--gold); }
+  .option h3 { font-size: 1.4rem; margin-bottom: .3rem; }
+
+  /* ---------- Contact ---------- */
+  .contact { background: var(--white); border-top: 1px solid var(--blush-200); }
+  .contact .wrap {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .contact h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); }
+  .contact-item { display: flex; flex-direction: column; gap: .2rem; }
+  .contact-item span { font-size: .85rem; color: var(--muted); }
+  .contact-item a, .contact-item strong { font-size: 1.1rem; font-weight: 400; text-decoration: none; }
+  .contact-item a:hover { color: var(--rose-700); }
+  .footer-note { padding: 1.4rem 0; text-align: center; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--blush-200); }
+
+  /* ---------- Floating cart + WhatsApp ---------- */
+  .fab-stack { position: fixed; right: 18px; bottom: 18px; z-index: 50; display: flex; flex-direction: column; gap: .7rem; align-items: flex-end; }
+  .fab {
+    display: inline-flex; align-items: center; gap: .55rem;
+    padding: .8rem 1.15rem;
+    border-radius: 999px;
+    border: 0;
+    box-shadow: 0 14px 30px -12px rgba(77, 58, 53, .55);
+    font: 400 .92rem var(--font-body);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .fab svg { width: 20px; height: 20px; }
+  .fab-cart { background: var(--cocoa); color: var(--white); }
+  .fab-cart .count {
+    min-width: 22px; height: 22px; padding: 0 6px;
+    border-radius: 999px; background: var(--gold); color: var(--white);
+    font-size: .8rem; display: inline-grid; place-items: center;
+  }
+  .fab-whats { background: #25a35a; color: var(--white); }
+
+  .cart-overlay { position: fixed; inset: 0; background: rgba(77, 58, 53, .35); z-index: 60; }
+  .cart-panel {
+    position: fixed; top: 0; right: 0; bottom: 0; z-index: 61;
+    width: min(400px, 100%);
+    background: var(--blush-50);
+    box-shadow: -20px 0 50px -30px rgba(77, 58, 53, .5);
+    display: flex; flex-direction: column;
+    animation: slide-in .35s cubic-bezier(.16, 1, .3, 1);
+  }
+  @keyframes slide-in { from { transform: translateX(100%); } to { transform: none; } }
+  .cart-head { display: flex; justify-content: space-between; align-items: center; padding: 1.3rem 1.4rem; border-bottom: 1px solid var(--blush-200); }
+  .cart-head h2 { font-size: 1.8rem; }
+  .icon-btn { background: none; border: 0; font-size: 1.8rem; line-height: 1; cursor: pointer; color: var(--cocoa); padding: .2rem .5rem; }
+  .cart-list { list-style: none; margin: 0; padding: 0 1.4rem; overflow-y: auto; flex: 1; }
+  .cart-item { display: grid; grid-template-columns: 1fr auto; gap: .3rem 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--blush-200); }
+  .cart-item strong { font-weight: 400; font-size: 1rem; }
+  .cart-item small { color: var(--muted); }
+  .qty { display: inline-flex; align-items: center; gap: .6rem; margin-top: .4rem; }
+  .qty button {
+    width: 30px; height: 30px; border-radius: 50%;
+    border: 1px solid var(--blush-200); background: var(--white);
+    cursor: pointer; font-size: 1rem; color: var(--cocoa);
+  }
+  .remove { background: none; border: 0; color: var(--rose-700); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; padding: 0; }
+  .cart-empty { padding: 2rem 1.4rem; color: var(--muted); text-align: center; }
+  .cart-foot { padding: 1.3rem 1.4rem 1.6rem; border-top: 1px solid var(--blush-200); background: var(--white); }
+  .cart-total { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; }
+  .cart-total strong { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; color: var(--rose-700); }
+  .cart-foot .btn { width: 100%; }
+  .cart-note { font-size: .82rem; color: var(--muted); margin: .8rem 0 0; text-align: center; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%);
+    background: var(--cocoa); color: var(--white);
+    padding: .7rem 1.1rem; border-radius: 999px; font-size: .9rem;
+    opacity: 0; pointer-events: none; transition: opacity .3s ease; z-index: 70;
+  }
+  .toast.show { opacity: 1; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .hero .wrap, .perfumes .wrap, .visit .wrap { grid-template-columns: 1fr; }
+    .hero-figure { max-width: 460px; width: 100%; margin-inline: auto; }
+    .contact .wrap { grid-template-columns: 1fr; }
+    .toolbar { grid-template-columns: 1fr; }
+    .price-filter { min-width: 0; }
+  }
+  @media (max-width: 760px) {
+    .nav a { display: none; }
+    .nav { gap: 0; }
+    .strip .wrap { grid-template-columns: 1fr; }
+    .strip div + div { border-left: 0; border-top: 1px solid var(--blush-200); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+    .marquee-track { animation: none; }
+    .rise { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Gabi Pratas e Perfumes, início">
+      <img src="assets/logo.jpeg" alt="Logo Gabi Pratas e Perfumes" width="46" height="46">
+      <span>Gabi Pratas</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#catalogo">Peças</a>
+      <a href="#perfumes">Perfumes</a>
+      <a href="#depoimentos">Clientes</a>
+      <a href="#visita">Entrega e visita</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-whats header-cta" href="https://wa.me/5562991710142" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1 class="rise">Prata 925 e perfumes árabes, <em>escolhidos com cuidado</em></h1>
+        <p class="lead rise rise-2">Anéis, colares, brincos e pulseiras com zircônias, além de perfumes árabes e importados. Escolha suas peças pelo site e finalize pelo WhatsApp.</p>
+        <div class="hero-actions rise rise-3">
+          <a class="btn btn-primary" href="#catalogo">Ver as peças</a>
+          <a class="btn btn-ghost" href="https://wa.me/5562991710142" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+      <figure class="hero-figure rise">
+        <img src="assets/aneis-mao-1.jpeg" alt="Mão com vários anéis de prata com zircônias, entre flores delicadas">
+      </figure>
+    </div>
+  </div>
+
+  <!-- Strip -->
+  <div class="strip" aria-label="Destaques">
+    <div class="wrap">
+      <div><strong>Prata 925</strong><span>Peças com brilho e acabamento cuidadoso</span></div>
+      <div><strong>Perfumes árabes</strong><span>Fragrâncias intensas e importadas</span></div>
+      <div><strong>Atendimento sempre disponível</strong><span>Tire dúvidas pelo WhatsApp</span></div>
+    </div>
+  </div>
+
+  <!-- Catálogo -->
+  <section id="catalogo" aria-labelledby="catalogo-titulo">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="catalogo-titulo">Peças em prata 925</h2>
+          <p>Filtre por tipo e por faixa de preço. Adicione ao carrinho e finalize no WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="Filtrar por tipo">
+          <button class="chip" type="button" data-cat="todas" aria-pressed="true">Todas</button>
+          <button class="chip" type="button" data-cat="aneis" aria-pressed="false">Anéis</button>
+          <button class="chip" type="button" data-cat="colares" aria-pressed="false">Colares</button>
+          <button class="chip" type="button" data-cat="brincos" aria-pressed="false">Brincos</button>
+          <button class="chip" type="button" data-cat="pulseiras" aria-pressed="false">Pulseiras</button>
+          <button class="chip" type="button" data-cat="acessorios" aria-pressed="false">Acessórios</button>
+        </div>
+
+        <div class="price-filter">
+          <div class="label-row">
+            <span>Faixa de preço</span>
+            <span><output id="priceOut" for="minPrice maxPrice">R$ 0,00 – R$ 1.000,00</output></span>
+          </div>
+          <div class="range" id="range">
+            <div class="range-track"></div>
+            <div class="range-fill" id="rangeFill"></div>
+            <input type="range" id="minPrice" min="0" max="1000" step="10" value="0" aria-label="Preço mínimo">
+            <input type="range" id="maxPrice" min="0" max="1000" step="10" value="1000" aria-label="Preço máximo">
+          </div>
+          <div class="label-row" style="margin:.5rem 0 0">
+            <span></span>
+            <button class="link-btn" id="clearPrice" type="button" disabled>Limpar preço</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <!-- Valores e nomes são ilustrativos: troque pelos reais depois -->
+        <article class="card" data-cat="aneis" data-price="189" data-id="anel-trio" data-name="Anel trio de zircônias">
+          <div class="card-img"><img src="assets/aneis-trio.jpeg" alt="Anéis de prata com zircônias, modelo trio" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Anel trio de zircônias</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="aneis" data-price="149" data-id="aneis-delicados" data-name="Conjunto de anéis delicados">
+          <div class="card-img"><img src="assets/aneis-mao-2.jpeg" alt="Conjunto de anéis de prata com zircônias na mão" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Conjunto de anéis delicados</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="brincos" data-price="129" data-id="brincos-zirconia" data-name="Brincos de prata com zircônias">
+          <div class="card-img"><img src="assets/brincos.jpeg" alt="Brincos de prata com zircônias em um par de orelhas" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Brincos de prata com zircônias</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="colares" data-price="219" data-id="colar-camadas" data-name="Colar em camadas com estrelas e coração">
+          <div class="card-img"><img src="assets/colar-camadas.jpeg" alt="Colares de prata em camadas com estrelas e pingente de coração" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Colar em camadas, estrelas e coração</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="pulseiras" data-price="179" data-id="pulseiras-prata" data-name="Pulseiras de prata com zircônias">
+          <div class="card-img"><img src="assets/pulseiras.jpeg" alt="Conjunto de pulseiras de prata com zircônias e detalhe em coração" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Pulseiras de prata com zircônias</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="pulseiras" data-price="99" data-id="pulseira-arco-iris" data-name="Pulseira arco-íris de zircônias">
+          <div class="card-img"><img src="assets/pulseira-arco-iris.jpeg" alt="Pulseira de prata com zircônias coloridas" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Pulseira arco-íris de zircônias</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="acessorios" data-price="79" data-id="peca-folhas" data-name="Peça de folhas com zircônias">
+          <div class="card-img"><img src="assets/peca-folhas.jpeg" alt="Peça de prata em formato de folhas com zircônias" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Peça de folhas com zircônias</h3>
+            <div class="card-foot"><span class="price"></span><button class="add" type="button">Adicionar</button></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="emptyMsg" hidden>Nenhuma peça nesse filtro. Tente ampliar a faixa de preço.</p>
+    </div>
+  </section>
+
+  <!-- Perfumes -->
+  <section class="perfumes" id="perfumes" aria-labelledby="perfumes-titulo">
+    <div class="wrap">
+      <div>
+        <h2 id="perfumes-titulo">Perfumes árabes e importados</h2>
+        <p>Fragrâncias intensas e marcantes, selecionadas para quem gosta de deixar presença. Consulte a disponibilidade e escolha pelo WhatsApp, com atendimento sempre disponível.</p>
+        <div class="hero-actions" style="margin-top:2rem">
+          <a class="btn btn-ghost" href="https://wa.me/5562991710142?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20os%20perfumes%20dispon%C3%ADveis." target="_blank" rel="noopener">Consultar perfumes</a>
+        </div>
+      </div>
+      <ul class="perfume-notes" aria-label="Destaques dos perfumes">
+        <li>Perfumes árabes<small>Notas intensas, de longa duração</small></li>
+        <li>Importados<small>Selecionados com cuidado de qualidade</small></li>
+        <li>Para presentear<small>Escolha com ajuda da nossa equipe</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" aria-labelledby="depo-titulo">
+    <div class="wrap">
+      <div class="testimonials-head">
+        <h2 id="depo-titulo">O que dizem as clientes</h2>
+        <p>Veja o que quem já comprou com a gente comenta sobre as peças e o atendimento.</p>
+      </div>
+      <!-- DEPOIMENTOS DE EXEMPLO: substitua pelos depoimentos reais das clientes antes de publicar -->
+      <div class="marquee-wrap" id="marquee" aria-label="Depoimentos de clientes"></div>
+    </div>
+  </section>
+
+  <!-- Entrega e visita -->
+  <section class="visit" id="visita" aria-labelledby="visita-titulo">
+    <div class="wrap">
+      <img src="assets/peca-folhas.jpeg" alt="Peça de prata com zircônias sobre uma superfície clara" loading="lazy">
+      <div>
+        <h2 id="visita-titulo">Quer conhecer as peças de perto?</h2>
+        <p>Você escolhe do seu jeito. Marcamos uma visita para conhecer melhor os produtos, ou entregamos no seu endereço.</p>
+        <div class="options">
+          <div class="option">
+            <h3>Visita marcada</h3>
+            <p>Combine um horário pelo WhatsApp e veja as peças pessoalmente antes de decidir.</p>
+          </div>
+          <div class="option">
+            <h3>Entrega</h3>
+            <p>Receba o seu pedido em casa. Combine a entrega direto com a nossa equipe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact" id="contato">
+  <div class="wrap" style="padding-block: clamp(3rem, 6vw, 4.5rem);">
+    <div>
+      <h2>Vamos conversar?</h2>
+      <p style="color:var(--muted);margin:.8rem 0 0;max-width:24rem">Tire dúvidas, peça um orçamento ou escolha suas peças. Atendimento sempre disponível.</p>
+    </div>
+    <div class="contact-item">
+      <span>WhatsApp</span>
+      <a href="https://wa.me/5562991710142" target="_blank" rel="noopener">(62) 99171-0142</a>
+    </div>
+    <div class="contact-item">
+      <span>Instagram</span>
+      <a href="https://instagram.com/gabipratas925go" target="_blank" rel="noopener">@gabipratas925go</a>
+      <strong style="margin-top:.6rem">Goiânia, GO</strong>
+    </div>
+  </div>
+  <div class="footer-note">© 2026 Gabi Pratas e Perfumes. Todos os direitos reservados.</div>
+</footer>
+
+<!-- Botões flutuantes -->
+<div class="fab-stack">
+  <button class="fab fab-cart" id="cartBtn" type="button" aria-controls="cartPanel" aria-expanded="false">
+    Carrinho <span class="count" id="cartCount">0</span>
+  </button>
+  <a class="fab fab-whats" href="https://wa.me/5562991710142" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9c1.6.7 2.3.7 3.1.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const WHATS = "5562991710142";
+  const MIN = 0, MAX = 1000;
+  const fmt = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+  /* ---------- Preços nos cards ---------- */
+  const cards = [...document.querySelectorAll(".card")];
+  cards.forEach(card => {
+    card.querySelector(".price").textContent = fmt(Number(card.dataset.price));
+  });
+
+  /* ---------- Filtros ---------- */
+  const grid = document.getElementById("grid");
+  const emptyMsg = document.getElementById("emptyMsg");
+  const chips = [...document.querySelectorAll(".chip")];
+  const minEl = document.getElementById("minPrice");
+  const maxEl = document.getElementById("maxPrice");
+  const fill = document.getElementById("rangeFill");
+  const out = document.getElementById("priceOut");
+  const clearBtn = document.getElementById("clearPrice");
+  let activeCat = "todas";
+
+  const pct = (v) => ((v - MIN) / (MAX - MIN)) * 100;
+
+  function applyFilters() {
+    const lo = Number(minEl.value), hi = Number(maxEl.value);
+    let visible = 0;
+    cards.forEach(card => {
+      const price = Number(card.dataset.price);
+      const okCat = activeCat === "todas" || card.dataset.cat === activeCat;
+      const okPrice = price >= lo && price <= hi;
+      card.hidden = !(okCat && okPrice);
+      if (!card.hidden) visible++;
+    });
+    emptyMsg.hidden = visible > 0;
+  }
+
+  function updateRange(from) {
+    let lo = Number(minEl.value), hi = Number(maxEl.value);
+    if (lo > hi) {
+      if (from === "min") { lo = hi; minEl.value = lo; }
+      else { hi = lo; maxEl.value = hi; }
+    }
+    fill.style.left = pct(lo) + "%";
+    fill.style.width = (pct(hi) - pct(lo)) + "%";
+    out.textContent = `${fmt(lo)} – ${fmt(hi)}`;
+    const isDefault = lo === MIN && hi === MAX;
+    clearBtn.disabled = isDefault;
+    applyFilters();
+  }
+
+  minEl.addEventListener("input", () => updateRange("min"));
+  maxEl.addEventListener("input", () => updateRange("max"));
+  clearBtn.addEventListener("click", () => {
+    minEl.value = MIN; maxEl.value = MAX; updateRange();
+  });
+
+  chips.forEach(chip => chip.addEventListener("click", () => {
+    activeCat = chip.dataset.cat;
+    chips.forEach(c => c.setAttribute("aria-pressed", String(c === chip)));
+    applyFilters();
+  }));
+
+  updateRange();
+
+  /* ---------- Carrinho ---------- */
+  const KEY = "gabi-carrinho";
+  let cart = {};
+  try { cart = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { cart = {}; }
+
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch (e) {} };
+  const toast = document.getElementById("toast");
+  let toastTimer;
+  function showToast(text) {
+    toast.textContent = text;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 1600);
+  }
+
+  const cartBtn = document.getElementById("cartBtn");
+  const cartCount = document.getElementById("cartCount");
+  const panel = document.createElement("div");
+  panel.innerHTML = `
+    <div class="cart-overlay" data-close></div>
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrinho" role="dialog" aria-modal="true">
+      <div class="cart-head">
+        <h2>Seu carrinho</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Fechar carrinho">×</button>
+      </div>
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="cart-empty" id="cartEmpty">Nenhuma peça adicionada ainda.</p>
+      <div class="cart-foot">
+        <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <a class="btn btn-whats" id="checkout" href="#" target="_blank" rel="noopener" aria-disabled="true">Finalizar pelo WhatsApp</a>
+        <p class="cart-note">Você confirma o pedido e o pagamento diretamente com a nossa equipe.</p>
+      </div>
+    </aside>`;
+  panel.hidden = true;
+  document.body.appendChild(panel);
+  const overlay = panel.querySelector(".cart-overlay");
+  const aside = panel.querySelector("#cartPanel");
+  const list = panel.querySelector("#cartList");
+  const emptyCart = panel.querySelector("#cartEmpty");
+  const totalEl = panel.querySelector("#cartTotal");
+  const checkout = panel.querySelector("#checkout");
+
+  function cartItems() { return Object.values(cart); }
+
+  function renderCart() {
+    const items = cartItems();
+    const count = items.reduce((n, i) => n + i.qty, 0);
+    const total = items.reduce((s, i) => s + i.qty * i.price, 0);
+
+    cartCount.textContent = count;
+    totalEl.textContent = fmt(total);
+    emptyCart.hidden = items.length > 0;
+
+    list.innerHTML = items.map(i => `
+      <li class="cart-item">
+        <div>
+          <strong>${i.name}</strong><br>
+          <small>${fmt(i.price)} cada</small>
+          <div class="qty">
+            <button type="button" data-act="dec" data-id="${i.id}" aria-label="Diminuir quantidade">−</button>
+            <span aria-live="polite">${i.qty}</span>
+            <button type="button" data-act="inc" data-id="${i.id}" aria-label="Aumentar quantidade">+</button>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <strong>${fmt(i.qty * i.price)}</strong><br>
+          <button class="remove" type="button" data-act="rm" data-id="${i.id}">remover</button>
+        </div>
+      </li>`).join("");
+
+    if (items.length) {
+      const lines = items.map(i => `• ${i.qty}x ${i.name} (${fmt(i.price * i.qty)})`);
+      const msg = `Olá! Gostaria de fazer este pedido:\n${lines.join("\n")}\n\nTotal: ${fmt(total)}`;
+      checkout.href = `https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`;
+      checkout.setAttribute("aria-disabled", "false");
+    } else {
+      checkout.href = "#";
+      checkout.setAttribute("aria-disabled", "true");
+    }
+    save();
+  }
+
+  function addToCart(card) {
+    const id = card.dataset.id;
+    if (!cart[id]) cart[id] = { id, name: card.dataset.name, price: Number(card.dataset.price), qty: 0 };
+    cart[id].qty++;
+    renderCart();
+    showToast(`${card.dataset.name} adicionado`);
+  }
+
+  function openCart(open) {
+    panel.hidden = !open;
+    cartBtn.setAttribute("aria-expanded", String(open));
+    if (open) aside.querySelector(".icon-btn").focus();
+    else cartBtn.focus();
+  }
+
+  grid.addEventListener("click", (e) => {
+    const btn = e.target.closest(".add");
+    if (btn) addToCart(btn.closest(".card"));
+  });
+
+  list.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-act]");
+    if (!btn) return;
+    const item = cart[btn.dataset.id];
+    if (!item) return;
+    const act = btn.dataset.act;
+    if (act === "inc") item.qty++;
+    if (act === "dec") item.qty--;
+    if (act === "rm" || item.qty <= 0) delete cart[btn.dataset.id];
+    renderCart();
+  });
+
+  cartBtn.addEventListener("click", () => openCart(panel.hidden));
+  overlay.addEventListener("click", () => openCart(false));
+  panel.querySelector(".icon-btn").addEventListener("click", () => openCart(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) openCart(false); });
+  checkout.addEventListener("click", (e) => { if (checkout.getAttribute("aria-disabled") === "true") e.preventDefault(); });
+
+  renderCart();
+
+  /* ---------- Depoimentos (animação contínua em colunas) ---------- */
+  // Textos de exemplo: troque pelos depoimentos reais das clientes.
+  const depoimentos = [
+    { texto: "Peças delicadas, com brilho bonito e acabamento caprichado. Chegou igualzinho às fotos.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" },
+    { texto: "Atendimento rápido pelo WhatsApp, com todas as minhas dúvidas respondidas antes da compra.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" },
+    { texto: "A prata 925 tem qualidade de verdade. Já comprei presente para as amigas.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" },
+    { texto: "Os perfumes árabes são intensos e duram bastante. Certamente vou comprar de novo.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" },
+    { texto: "Montei um conjunto de anéis e ficou lindo nas mãos. Recomendo.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" },
+    { texto: "Escolhi pelo site e finalizei o pedido direto no WhatsApp. Muito prático.", nome: "Cliente verificada", papel: "Compra pelo WhatsApp" }
+  ];
+
+  const initials = (n) => n.split(" ").map(p => p[0]).slice(0, 2).join("").toUpperCase();
+  const card = (d) => `
+    <figure class="quote" style="margin:0">
+      <p>${d.texto}</p>
+      <footer>
+        <span class="avatar" aria-hidden="true">${initials(d.nome)}</span>
+        <figcaption><strong>${d.nome}</strong><small>${d.papel}</small></figcaption>
+      </footer>
+    </figure>`;
+
+  const marquee = document.getElementById("marquee");
+  const durations = [22, 28, 25];
+  marquee.innerHTML = durations.map((dur, col) => {
+    const rotated = depoimentos.slice(col).concat(depoimentos.slice(0, col));
+    const group = `<div class="marquee-group">${rotated.map(card).join("")}</div>`;
+    return `
+      <div class="marquee-col" style="--dur:${dur}s" aria-hidden="false">
+        <div class="marquee-track">${group}${group}</div>
+      </div>`;
+  }).join("");
+})();
+</script>
+</body>
+</html>
